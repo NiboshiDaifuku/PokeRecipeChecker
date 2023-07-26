@@ -1,38 +1,56 @@
 export function getIngredientThumb(name: string) {
+  let imageName = "";
   switch (name) {
     case "リンゴ":
-      return "./images/ingredient/apple.webp";
+      imageName = "apple.webp";
+      break;
     case "しっぽ":
-      return "./images/ingredient/tail.webp";
+      imageName = "tail.webp";
+      break;
     case "ハーブ":
-      return "./images/ingredient/herb.webp";
+      imageName = "herb.webp";
+      break;
     case "トマト":
-      return "./images/ingredient/tomato.webp";
+      imageName = "tomato.webp";
+      break;
     case "イモ":
-      return "./images/ingredient/potato.webp";
+      imageName = "potato.webp";
+      break;
     case "カカオ":
-      return "./images/ingredient/cacao.webp";
+      imageName = "cacao.webp";
+      break;
     case "ミルク":
-      return "./images/ingredient/milk.webp";
+      imageName = "milk.webp";
+      break;
     case "ネギ":
-      return "./images/ingredient/green_onion.webp";
+      imageName = "green_onion.webp";
+      break;
     case "ショウガ":
-      return "./images/ingredient/ginger.webp";
+      imageName = "ginger.webp";
+      break;
     case "キノコ":
-      return "./images/ingredient/mushroom.webp";
+      imageName = "mushroom.webp";
+      break;
     case "蜜":
-      return "./images/ingredient/honey.webp";
+      imageName = "honey.webp";
+      break;
     case "卵":
-      return "./images/ingredient/egg.webp";
+      imageName = "egg.webp";
+      break;
     case "豆":
-      return "./images/ingredient/bean.webp";
+      imageName = "bean.webp";
+      break;
     case "豆肉":
-      return "./images/ingredient/meat_bean.webp";
+      imageName = "meat_bean.webp";
+      break;
     case "オイル":
-      return "./images/ingredient/oil.webp";
+      imageName = "oil.webp";
+      break;
     default:
-      return "";
+      return <></>;
   }
+  const IMAGE_PATH = "./images/ingredient/" + imageName;
+  return <img src={IMAGE_PATH} alt="" />;
 }
 
 export const recipeObj: Object = {

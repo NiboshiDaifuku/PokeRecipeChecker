@@ -6,7 +6,7 @@ const RecipeInfo = ({ recipeThumb, ingredientThumb, haveNum, needNum, canCook })
     const items = [
       <tr>
         <td rowSpan={String(rowNum)}>{<img src={recipeThumb} alt="" />}</td>
-        <td>{<img src={getIngredientThumb(ingredientThumb[0])} alt="" />}</td>
+        <td>{getIngredientThumb(ingredientThumb[0])}</td>
         <td>
           {haveNum[0]}/{needNum[0]}
         </td>
@@ -17,7 +17,7 @@ const RecipeInfo = ({ recipeThumb, ingredientThumb, haveNum, needNum, canCook })
     for (let i = 1; i < ingredientThumb.length; i++) {
       items.push(
         <tr>
-          <td>{<img src={getIngredientThumb(ingredientThumb[i])} alt="" />}</td>
+          <td>{getIngredientThumb(ingredientThumb[i])}</td>
           <td>
             {haveNum[i]}/{needNum[i]}
           </td>
