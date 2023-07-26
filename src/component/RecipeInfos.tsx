@@ -31,20 +31,6 @@ const RecipeInfos = (recipeObj) => {
             <th>所持数</th>
             <th>調理可否</th>
           </tr>
-          <tr>
-            <td rowSpan="3">料理画像</td>
-            <td>材料画像1</td>
-            <td>グラフにオーバーレイ 所持数/必要数</td>
-            <td rowSpan="3">NG</td>
-          </tr>
-          <tr>
-            <td>材料画像2</td>
-            <td>グラフにオーバーレイ 所持数/必要数</td>
-          </tr>
-          <tr>
-            <td>材料画像3</td>
-            <td>グラフにオーバーレイ 所持数/必要数</td>
-          </tr>
         </thead>
         <tbody>{info}</tbody>
       </table>

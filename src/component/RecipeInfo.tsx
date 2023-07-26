@@ -1,11 +1,3 @@
-// interface recipeInfoArray {
-//   recipeThumb: string;
-//   ingredientThumb: string;
-//   haveNum: number;
-//   needNum: number;
-//   canCook: boolean;
-// }
-
 const RecipeInfo = ({ recipeThumb, ingredientThumb, haveNum, needNum, canCook }) => {
   const resultTable = () => {
     const rowNum = ingredientThumb.length;
@@ -21,6 +13,7 @@ const RecipeInfo = ({ recipeThumb, ingredientThumb, haveNum, needNum, canCook })
         <td rowSpan={String(rowNum)}>{canCook}</td>
       </tr>
     ];
+
     for (let i = 1; i < ingredientThumb.length; i++) {
       items.push(
         <tr>
@@ -35,14 +28,6 @@ const RecipeInfo = ({ recipeThumb, ingredientThumb, haveNum, needNum, canCook })
   };
 
   return resultTable();
-  // <tr>
-  //   <td>{recipeThumb /* <img src={thumbnail} alt="" width="80" /> */}</td>
-  //   <td>{ingredientThumb}</td>
-  //   <td>
-  //     {haveNum}/{needNum}
-  //   </td>
-  //   <td>{canCook}</td>
-  // </tr>
 };
 
 export default RecipeInfo;

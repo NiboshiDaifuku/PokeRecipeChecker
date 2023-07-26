@@ -1,4 +1,4 @@
-export const getRecipeCacheFromLocalStorage = () => {
+export const getIngredientsCacheFromLocalStorage = () => {
   if (window.localStorage) {
     return JSON.parse(localStorage.getItem("recipes"));
   } else {
@@ -6,7 +6,7 @@ export const getRecipeCacheFromLocalStorage = () => {
   }
 };
 
-export const setRecipeCacheToLocalStorage = (recipeInfos) => {
+export const setIngredientsCacheToLocalStorage = (recipeInfos) => {
   let saveSuccessFlag = false;
   if (window.localStorage) {
     const json = JSON.stringify(recipeInfos);
