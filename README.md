@@ -1,7 +1,6 @@
-# CocoroKitchenRecipeRandomGetter
-### 説明
-- Sharpの公式レシピサイト [COCORO Kitchen](https://cocoroplus.jp.sharp/kitchen/recipe/searchresults/) から、レシピをランダムに1つピックアップするWebアプリです。
-- 詳細な使い方はWebアプリ内に記載してあります。
+# PokeRecipeChecker
 
-### 使い方
-- https://twitter.com/niboshi_daifuku/status/1561039356898725888
+## 説明
+
+- ポケモンスリープの作成可能レシピを楽に可視化するアプリです
+- [ポケモンスリープ（PokemonSleep）攻略 Wiki](https://gamerch.com/pokesleep/)の情報を参考にしています
